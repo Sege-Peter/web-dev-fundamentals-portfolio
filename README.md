@@ -118,16 +118,11 @@ This repository is initialized locally with Git. Follow these steps to publish i
 5. Click **Create repository**.
 
 ### Step 2: Link and Push your local repository
-Open PowerShell or your command prompt in this directory (`C:\Users\HomePC\web-dev-fundamentals-portfolio`) and run:
-
 ```bash
-# Replace YOUR-USERNAME and YOUR-REPO-NAME with your GitHub details:
-git remote add origin https://github.com/YOUR-USERNAME/web-dev-fundamentals-portfolio.git
+git remote add origin https://github.com/Sege-Peter/web-dev-fundamentals-portfolio.git
 git branch -M main
 git push -u origin main
 ```
-
-*(If you use SSH, use `git remote add origin git@github.com:YOUR-USERNAME/web-dev-fundamentals-portfolio.git`)*
 
 ---
 
@@ -143,7 +138,7 @@ Once your code is pushed to GitHub, you can publish it live to the web for free 
 4. Click **Save**.
 5. Within 1-2 minutes, GitHub Pages will deploy your site to:
    ```
-   https://<your-username>.github.io/web-dev-fundamentals-portfolio/
+   https://sege-peter.github.io/web-dev-fundamentals-portfolio/
    ```
 
 ---
