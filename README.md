@@ -13,6 +13,7 @@ Designed specifically as a template and milestone showcase for **Web Development
 
 ## 📖 Table of Contents
 
+- [📚 Complete Course Curriculum (Git & Web Dev)](#-complete-course-curriculum)
 - [🌟 Features & Learning Concepts](#-features--learning-concepts)
 - [📂 Project Directory Structure](#-project-directory-structure)
 - [🚀 Quick Start (Running Locally)](#-quick-start-running-locally)
@@ -21,6 +22,26 @@ Designed specifically as a template and milestone showcase for **Web Development
 - [🧱 Course Fundamentals Breakdown](#-course-fundamentals-breakdown)
 - [📝 Customization Guide](#-customization-guide)
 - [📜 License](#-license)
+
+---
+
+## 📚 Complete Course Curriculum
+
+This repository includes a complete, self-paced course curriculum stored directly in the [`course/`](course/README.md) directory:
+
+### 🐙 Track 1: Git & GitHub Mastery
+- [**Module 1: Git Core Concepts & Environment Setup**](course/git-and-github/01-git-core-concepts-and-setup.md)
+- [**Module 2: Daily Git Commands & Workflow**](course/git-and-github/02-daily-git-commands-and-workflow.md)
+- [**Module 3: Branching, Merging & Conflict Resolution**](course/git-and-github/03-branching-merging-and-conflicts.md)
+- [**Module 4: GitHub Collaboration, Pull Requests & Workflows**](course/git-and-github/04-github-collaboration-and-workflows.md)
+- [**Module 5: Git Cheatsheet & Emergency Recovery Guide**](course/git-and-github/05-git-cheatsheet-and-recovery.md)
+
+### 🌐 Track 2: Foundations of Modern Web Development
+- [**Module 1: How the Web Works & Developer Tools**](course/web-development-fundamentals/01-how-the-web-works-and-devtools.md)
+- [**Module 2: Semantic HTML5 & Web Accessibility (a11y)**](course/web-development-fundamentals/02-semantic-html5-and-accessibility.md)
+- [**Module 3: Modern CSS3 Layouts & Architecture**](course/web-development-fundamentals/03-modern-css3-layouts-and-architecture.md)
+- [**Module 4: Vanilla JavaScript (ES6+) & DOM Interactivity**](course/web-development-fundamentals/04-vanilla-javascript-and-dom.md)
+- [**Module 5: Developer Tools, Security & Engineering Roadmap**](course/web-development-fundamentals/05-developer-ecosystem-tools-and-roadmap.md)
 
 ---
 
@@ -46,16 +67,21 @@ Designed specifically as a template and milestone showcase for **Web Development
 ```text
 web-dev-fundamentals-portfolio/
 │
-├── index.html              # Main semantic HTML5 document
+├── course/                     # Complete Web Development & Git/GitHub Course
+│   ├── README.md               # Curriculum roadmap & syllabus index
+│   ├── git-and-github/         # Track 1: 5 comprehensive Git & GitHub modules
+│   └── web-development-fundamentals/ # Track 2: 5 comprehensive Web Dev modules
+│
+├── index.html                  # Main semantic HTML5 document
 ├── css/
-│   └── style.css           # Modular styles, CSS variables, grid/flex, responsive rules
+│   └── style.css               # Modular styles, CSS variables, grid/flex, responsive rules
 ├── js/
-│   └── app.js              # Vanilla ES6+ application logic and DOM handling
+│   └── app.js                  # Vanilla ES6+ application logic and DOM handling
 ├── assets/
-│   └── favicon.svg         # SVG Favicon icon
-├── .gitignore              # Git ignore configuration
-├── LICENSE                 # MIT Open Source License
-└── README.md               # Repository documentation and course guide
+│   └── favicon.svg             # SVG Favicon icon
+├── .gitignore                  # Git ignore configuration
+├── LICENSE                     # MIT Open Source License
+└── README.md                   # Repository documentation and course guide
 ```
 
 ---
