@@ -1,0 +1,25 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node modules / package manager caches (if expanded later)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build & Temporary Files
+dist/
+build/
+*.tmp
+*.log

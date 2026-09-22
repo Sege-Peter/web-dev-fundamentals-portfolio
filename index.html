@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio & Web Development Fundamentals Showcase for Web Development Course." />
+  <meta name="author" content="Student Developer" />
+  <title>DevPortfolio | Web Development Fundamentals</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="logo" aria-label="DevPortfolio Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">WebDev<span class="accent">.Fundamentals</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#fundamentals" class="nav-link">Fundamentals</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher & Mobile Menu Button -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+        </button>
+        <button id="nav-toggle" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge hero-badge">Web Development Course 101</div>
+          <h1 class="hero-title">
+            Mastering the <span class="gradient-text">Three Pillars</span> of the Web
+          </h1>
+          <p class="hero-subtitle">
+            Welcome to my web development learning portfolio! Here I document my journey through HTML5 semantic markup, modern responsive CSS3 layouts, and interactive JavaScript programming.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">View Course Projects</a>
+            <a href="#fundamentals" class="btn btn-secondary">Explore Fundamentals</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Semantic HTML5</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">Pure CSS</span>
+              <span class="stat-label">Flexbox & Grid</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">Vanilla JS</span>
+              <span class="stat-label">Zero Dependencies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="window-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="window-title">fundamentals.js</span>
+            </div>
+            <pre class="code-block"><code><span class="token-keyword">const</span> webStudent = {
+  <span class="token-prop">course</span>: <span class="token-string">"CS 101: Web Development"</span>,
+  <span class="token-prop">focus</span>: [<span class="token-string">"HTML5"</span>, <span class="token-string">"CSS3"</span>, <span class="token-string">"ES6+"</span>],
+  <span class="token-prop">isResponsive</span>: <span class="token-boolean">true</span>,
+  <span class="token-prop">buildAwesomeWebsites</span>: () => {
+    <span class="token-keyword">return</span> <span class="token-string">"Ready to create real-world apps!"</span>;
+  }
+};
+
+<span class="token-comment">// Run web development lifecycle</span>
+console.log(webStudent.buildAwesomeWebsites());</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About The Developer</span>
+          <h2 class="section-title">Bridging Code and User Experience</h2>
+          <p class="section-description">
+            Building solid foundational habits early: clean code, semantic markup, accessible interfaces, and performant styling.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon">🎯</div>
+            <h3>Course Objectives</h3>
+            <p>
+              Develop a deep understanding of core web technologies before adopting heavy frameworks. Understanding native browser APIs, CSS layouts, and DOM manipulation ensures long-term adaptability.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">⚡</div>
+            <h3>Core Principles</h3>
+            <p>
+              Mobile-first responsive design, semantic accessibility (a11y), clean git version control workflow, and modular CSS architecture using custom properties.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🚀</div>
+            <h3>Future Roadmap</h3>
+            <p>
+              Expanding from core fundamentals into REST API consumption, asynchronous programming, modern build tools, and full-stack integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FUNDAMENTALS SHOWCASE ==================== -->
+    <section class="section fundamentals-section" id="fundamentals">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Concepts</span>
+          <h2 class="section-title">The Three Pillars of Web Development</h2>
+          <p class="section-description">
+            Every website relies on three fundamental technologies working seamlessly together.
+          </p>
+        </div>
+
+        <div class="fundamentals-grid">
+          <!-- Pillar 1: HTML5 -->
+          <article class="pillar-card html-card">
+            <div class="pillar-header">
+              <span class="pillar-badge badge-html">HTML5</span>
+              <h3 class="pillar-title">Structure & Semantics</h3>
+            </div>
+            <p class="pillar-desc">
+              The skeletal framework of the web. Semantic HTML creates meaningful documents understood by browsers, search engines, and screen readers.
+            </p>
+            <ul class="pillar-points">
+              <li>Semantic elements (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>)</li>
+              <li>Accessible Forms with validation & labels</li>
+              <li>SEO-friendly markup & Meta tags</li>
+              <li>WAI-ARIA roles & keyboard navigation</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2: CSS3 -->
+          <article class="pillar-card css-card">
+            <div class="pillar-header">
+              <span class="pillar-badge badge-css">CSS3</span>
+              <h3 class="pillar-title">Presentation & Design</h3>
+            </div>
+            <p class="pillar-desc">
+              The styling layer that breathes visual life and responsive adaptability into structural HTML documents across all devices.
+            </p>
+            <ul class="pillar-points">
+              <li>Box Model (Margin, Border, Padding, Content)</li>
+              <li>Modern Flexbox & 2D CSS Grid Layouts</li>
+              <li>Responsive Media Queries & Fluid Typography</li>
+              <li>CSS Variables & Dark/Light Theme Switching</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3: JavaScript -->
+          <article class="pillar-card js-card">
+            <div class="pillar-header">
+              <span class="pillar-badge badge-js">JavaScript ES6+</span>
+              <h3 class="pillar-title">Behavior & Interactivity</h3>
+            </div>
+            <p class="pillar-desc">
+              The programming engine that handles events, manipulates the DOM in real-time, persists data, and fetches dynamic resources.
+            </p>
+            <ul class="pillar-points">
+              <li>DOM Querying & Dynamic Element Creation</li>
+              <li>Event Listeners (click, submit, change, keydown)</li>
+              <li>Browser Web APIs (<code>localStorage</code>, <code>fetch</code>)</li>
+              <li>Modern syntax: Arrow functions, Destructuring, Modules</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SHOWCASE ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Course Work</span>
+          <h2 class="section-title">Projects & Lab Assignments</h2>
+          <p class="section-description">
+            Hands-on assignments and mini-projects built during the course to apply web fundamentals in practice.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters" role="tablist" aria-label="Filter course projects">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="html-css" role="tab" aria-selected="false">HTML & CSS</button>
+          <button class="filter-btn" data-filter="javascript" role="tab" aria-selected="false">JavaScript</button>
+          <button class="filter-btn" data-filter="capstone" role="tab" aria-selected="false">Capstone</button>
+        </div>
+
+        <!-- Dynamic Projects Container -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated dynamically via JS with fallback cards in case JS is disabled -->
+          <noscript>
+            <article class="project-card">
+              <div class="project-content">
+                <span class="project-category">HTML & CSS</span>
+                <h3 class="project-title">Responsive Landing Page</h3>
+                <p class="project-desc">A mobile-first landing page utilizing Flexbox, CSS Grid, and semantic tags.</p>
+              </div>
+            </article>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COURSE CURRICULUM & TIMELINE ==================== -->
+    <section class="section curriculum-section" id="curriculum">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Learning Journey</span>
+          <h2 class="section-title">Course Modules & Milestones</h2>
+          <p class="section-description">
+            Structured progression through the Web Development course syllabus.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Module 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">1</div>
+            <div class="timeline-content">
+              <span class="timeline-time">Week 1 - 2</span>
+              <h3 class="timeline-title">HTML5 Fundamentals & Semantic Web</h3>
+              <p>Structure, document outlines, text formatting, hyperlinks, lists, tables, multimedia (images, audio, video), and accessible forms.</p>
+              <div class="timeline-tags">
+                <span class="tag">Semantic HTML</span>
+                <span class="tag">Forms</span>
+                <span class="tag">SEO Basics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">2</div>
+            <div class="timeline-content">
+              <span class="timeline-time">Week 3 - 5</span>
+              <h3 class="timeline-title">CSS3 Styling, Flexbox & Grid Systems</h3>
+              <p>Cascade, specificity, inheritance, CSS Box Model, positioning, modern Flexbox 1D layout, CSS Grid 2D layout, transitions, and media queries.</p>
+              <div class="timeline-tags">
+                <span class="tag">Box Model</span>
+                <span class="tag">Flexbox</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">Responsive</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">3</div>
+            <div class="timeline-content">
+              <span class="timeline-time">Week 6 - 8</span>
+              <h3 class="timeline-title">JavaScript Fundamentals & DOM Manipulation</h3>
+              <p>Variables (let/const), data types, functions, control flow, DOM tree traversal, event listeners, dynamic style manipulation, and array methods.</p>
+              <div class="timeline-tags">
+                <span class="tag">ES6+</span>
+                <span class="tag">DOM API</span>
+                <span class="tag">Event Handling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">4</div>
+            <div class="timeline-content">
+              <span class="timeline-time">Week 9 - 10</span>
+              <h3 class="timeline-title">Async JS, Web Storage & Capstone Project</h3>
+              <p>JSON, Fetch API, Promises, async/await, Browser `localStorage`, Git workflow, and deploying projects to GitHub Pages.</p>
+              <div class="timeline-tags">
+                <span class="tag">Fetch API</span>
+                <span class="tag">LocalStorage</span>
+                <span class="tag">Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT / FEEDBACK FORM ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="contact-info">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Course Inquiries & Feedback</h2>
+          <p>
+            Have feedback on my course projects or want to discuss web development fundamentals? Drop a message below!
+          </p>
+          <div class="contact-methods">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email:</strong>
+                <p>student@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <strong>GitHub:</strong>
+                <p>github.com/your-username</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Location:</strong>
+                <p>Web Development Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+              <span class="error-msg" id="name-error">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+              <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Course Topic</label>
+              <select id="subject" name="subject">
+                <option value="general">General Question</option>
+                <option value="html">HTML5 Semantic Structure</option>
+                <option value="css">CSS3 Layouts / Flexbox / Grid</option>
+                <option value="js">JavaScript / DOM Interactivity</option>
+                <option value="project-review">Assignment Review</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+              <span class="error-msg" id="message-error">Please provide a message (minimum 10 characters).</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">
+              <span>Send Message</span>
+              <span class="btn-icon">➔</span>
+            </button>
+
+            <!-- Live Form Feedback Banner -->
+            <div id="form-alert" class="form-alert hidden" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#top" class="footer-logo">
+          <span class="logo-symbol">&lt;/&gt;</span>
+          <span>WebDev Fundamentals Portfolio</span>
+        </a>
+        <p class="footer-copy">
+          Designed and built with semantic HTML5, pure CSS3, and vanilla JavaScript. No framework overhead.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#fundamentals">Fundamentals</a>
+        <a href="#projects">Projects</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#top" class="back-to-top" aria-label="Back to top">↑ Top</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Web Development Fundamentals Course. Released under the MIT License.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
