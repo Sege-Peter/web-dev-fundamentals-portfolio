@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practical Example 04: Todo App with LocalStorage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="todo-app">
+    <header class="app-header">
+      <span class="badge">Practical Lab 04</span>
+      <h1>Course Task Tracker</h1>
+      <p>Full CRUD state management in Vanilla JavaScript with `localStorage` persistence and status filters.</p>
+    </header>
+
+    <!-- Task Input Form -->
+    <form id="todo-form" class="todo-form">
+      <input 
+        type="text" 
+        id="todo-input" 
+        placeholder="Add a new milestone (e.g. Master CSS Grid)..." 
+        autocomplete="off" 
+        required 
+      />
+      <button type="submit" class="btn btn-add">Add Task</button>
+    </form>
+
+    <!-- Controls & Filters -->
+    <div class="todo-controls">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+      <span id="items-left" class="items-left">0 tasks pending</span>
+    </div>
+
+    <!-- Task Items List -->
+    <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+    <footer class="app-footer">
+      <button id="clear-completed-btn" class="btn-text">Clear Completed</button>
+      <button id="clear-all-btn" class="btn-text text-danger">Reset All</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

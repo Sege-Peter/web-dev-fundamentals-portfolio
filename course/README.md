@@ -43,6 +43,11 @@ Master distributed version control, teamwork workflows, branch management, and o
    - Undoing accidental commits with `git reset`
    - Productivity aliases cheatsheet
 
+6. [**Module 6: Hands-On Git Interactive Terminal Exercises**](git-and-github/06-hands-on-git-exercises.md)
+   - 6 copy-and-run practical terminal challenges
+   - Simulating and resolving real merge conflicts on your machine
+   - Branch stashing and commit amendment drills
+
 ---
 
 ## 🌐 Track 2: Foundations of Modern Web Development
@@ -87,3 +92,19 @@ Learn the core technologies, browser mechanics, and modern toolchains that power
    - Web performance & Core Web Vitals (LCP, INP, CLS)
    - Core web security: XSS prevention, CORS rules, and HTTPS
    - Complete 4-phase Full-Stack Engineering Roadmap
+
+6. [**Module 6: Practical Code Cookbook & Cheat Sheet**](web-development-fundamentals/06-practical-code-cookbook.md)
+   - 20 copy-paste-ready HTML, CSS, & Vanilla JS code recipes
+   - Perfect centering, responsive typography, debounce, safe storage, and regex suite
+
+---
+
+## 🧪 Standalone Copyable Labs & Component Templates
+
+Check out the [`practical-examples/`](../practical-examples/README.md) directory for 5 self-contained, fully functioning starter labs learners can copy directly:
+
+1. [**Accessible Interactive Modal**](../practical-examples/01-accessible-interactive-modal/README.md)
+2. [**Responsive Navbar Drawer**](../practical-examples/02-responsive-navbar-drawer/README.md)
+3. [**Accessible FAQ Accordion**](../practical-examples/03-faq-accordion-component/README.md)
+4. [**Dynamic Task Tracker with LocalStorage**](../practical-examples/04-dynamic-todo-localstorage/README.md)
+5. [**Async Fetch Developer Quote Generator**](../practical-examples/05-async-fetch-quote-generator/README.md)

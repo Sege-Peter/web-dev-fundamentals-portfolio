@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practical Example 05: Async Fetch Developer Quotes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="badge">Practical Lab 05</span>
+      <h1>Async Fetch API & State Machine</h1>
+      <p>Demonstrating asynchronous HTTP requests with `fetch()`, loading spinners, error boundaries, fallback arrays, and clipboard copying.</p>
+    </header>
+
+    <div class="quote-card" id="quote-card">
+      <div class="card-status" id="card-status" aria-live="polite"></div>
+
+      <blockquote class="quote-body">
+        <p id="quote-text" class="quote-text">"First, solve the problem. Then, write the code."</p>
+        <cite id="quote-author" class="quote-author">— John Johnson</cite>
+      </blockquote>
+
+      <div class="quote-actions">
+        <button id="copy-btn" class="btn btn-secondary" title="Copy to clipboard">
+          <span class="icon">📋</span> Copy Quote
+        </button>
+        <button id="new-quote-btn" class="btn btn-primary">
+          <span class="icon">⚡</span> Get New Quote
+        </button>
+      </div>
+
+      <div id="toast" class="toast hidden" role="status">Copied to clipboard!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

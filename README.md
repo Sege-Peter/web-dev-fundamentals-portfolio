@@ -35,6 +35,7 @@ This repository includes a complete, self-paced course curriculum stored directl
 - [**Module 3: Branching, Merging & Conflict Resolution**](course/git-and-github/03-branching-merging-and-conflicts.md)
 - [**Module 4: GitHub Collaboration, Pull Requests & Workflows**](course/git-and-github/04-github-collaboration-and-workflows.md)
 - [**Module 5: Git Cheatsheet & Emergency Recovery Guide**](course/git-and-github/05-git-cheatsheet-and-recovery.md)
+- [**Module 6: Hands-On Git Interactive Terminal Exercises**](course/git-and-github/06-hands-on-git-exercises.md) *(Simulate real merge conflicts & branch drills)*
 
 ### 🌐 Track 2: Foundations of Modern Web Development
 - [**Module 1: How the Web Works & Developer Tools**](course/web-development-fundamentals/01-how-the-web-works-and-devtools.md)
@@ -42,6 +43,15 @@ This repository includes a complete, self-paced course curriculum stored directl
 - [**Module 3: Modern CSS3 Layouts & Architecture**](course/web-development-fundamentals/03-modern-css3-layouts-and-architecture.md)
 - [**Module 4: Vanilla JavaScript (ES6+) & DOM Interactivity**](course/web-development-fundamentals/04-vanilla-javascript-and-dom.md)
 - [**Module 5: Developer Tools, Security & Engineering Roadmap**](course/web-development-fundamentals/05-developer-ecosystem-tools-and-roadmap.md)
+- [**Module 6: Practical Code Cookbook & Cheat Sheet**](course/web-development-fundamentals/06-practical-code-cookbook.md) *(20+ copy-paste recipes: centering, debounce, storage, regex, lazy loading)*
+
+### 🧪 Standalone Copyable Labs & Starter Projects
+Check out the [`practical-examples/`](practical-examples/README.md) directory for 5 self-contained, copyable projects:
+1. [**Accessible Interactive Modal**](practical-examples/01-accessible-interactive-modal/README.md)
+2. [**Responsive Navbar Drawer**](practical-examples/02-responsive-navbar-drawer/README.md)
+3. [**Accessible FAQ Accordion**](practical-examples/03-faq-accordion-component/README.md)
+4. [**Dynamic Task Tracker with LocalStorage**](practical-examples/04-dynamic-todo-localstorage/README.md)
+5. [**Async Fetch Developer Quote Generator**](practical-examples/05-async-fetch-quote-generator/README.md)
 
 ---
 
@@ -69,8 +79,16 @@ web-dev-fundamentals-portfolio/
 │
 ├── course/                     # Complete Web Development & Git/GitHub Course
 │   ├── README.md               # Curriculum roadmap & syllabus index
-│   ├── git-and-github/         # Track 1: 5 comprehensive Git & GitHub modules
-│   └── web-development-fundamentals/ # Track 2: 5 comprehensive Web Dev modules
+│   ├── git-and-github/         # Track 1: 6 comprehensive Git & GitHub modules
+│   └── web-development-fundamentals/ # Track 2: 6 comprehensive Web Dev modules
+│
+├── practical-examples/         # 5 Standalone, copyable components & mini-projects
+│   ├── README.md               # Quick-start guide for practical labs
+│   ├── 01-accessible-interactive-modal/
+│   ├── 02-responsive-navbar-drawer/
+│   ├── 03-faq-accordion-component/
+│   ├── 04-dynamic-todo-localstorage/
+│   └── 05-async-fetch-quote-generator/
 │
 ├── index.html                  # Main semantic HTML5 document
 ├── css/

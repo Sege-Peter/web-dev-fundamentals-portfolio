@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practical Example 03: Accessible FAQ Accordion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="badge">Practical Lab 03</span>
+      <h1>Web Development FAQs Accordion</h1>
+      <p>A keyboard accessible accordion demonstrating ARIA control bindings, dynamic `scrollHeight` animation, and single-open toggle logic.</p>
+    </header>
+
+    <div class="accordion" id="faq-accordion">
+      <!-- Item 1 -->
+      <div class="accordion-item">
+        <button class="accordion-trigger" id="faq1-btn" aria-expanded="false" aria-controls="faq1-content">
+          <span class="accordion-title">What is the difference between margin and padding in CSS?</span>
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-content" id="faq1-content" role="region" aria-labelledby="faq1-btn">
+          <div class="accordion-body">
+            <strong>Margin</strong> creates space <em>outside</em> an element's border, pushing neighboring elements away. <strong>Padding</strong> creates space <em>inside</em> an element's border, between the border and the inner content.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="accordion-item">
+        <button class="accordion-trigger" id="faq2-btn" aria-expanded="false" aria-controls="faq2-content">
+          <span class="accordion-title">Why is `box-sizing: border-box` considered best practice?</span>
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-content" id="faq2-content" role="region" aria-labelledby="faq2-btn">
+          <div class="accordion-body">
+            In standard `content-box`, adding padding or border expands the total rendered size beyond the specified `width`. With `border-box`, padding and borders are absorbed into the declared width, making responsive grid calculations predictable.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="accordion-item">
+        <button class="accordion-trigger" id="faq3-btn" aria-expanded="false" aria-controls="faq3-content">
+          <span class="accordion-title">What is the difference between `let`, `const`, and `var` in JavaScript?</span>
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-content" id="faq3-content" role="region" aria-labelledby="faq3-btn">
+          <div class="accordion-body">
+            `var` is function-scoped and hoisted. `let` and `const` are block-scoped. `const` prevents reassignment of the variable identifier, making code less prone to accidental side-effects. Always default to `const`, and use `let` only when reassigning.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="accordion-item">
+        <button class="accordion-trigger" id="faq4-btn" aria-expanded="false" aria-controls="faq4-content">
+          <span class="accordion-title">How does Git differ from GitHub?</span>
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-content" id="faq4-content" role="region" aria-labelledby="faq4-btn">
+          <div class="accordion-body">
+            <strong>Git</strong> is an open-source, local version control command-line tool installed on your computer. <strong>GitHub</strong> is a cloud hosting platform for Git repositories with collaborative features like pull requests, issue tracking, and automated CI/CD workflows.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
